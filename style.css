@@ -1,0 +1,87 @@
+:root {
+    --biru-brand: #3348A1;
+}
+
+body {
+    height: 100vh;
+    background-color: #FEF6E3;
+    font-family: sans-serif;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 120px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    height: fit-content;
+}
+
+.text-weight {
+    font-weight: 100;
+}
+
+.col-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 18px;
+}
+
+.menu-utama {
+    margin: auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+h1 {
+    color: var(--biru-brand);
+    font-family: "Michroma", serif;
+    }
+
+.image{
+    display: flex;
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+.motor-info {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+    a {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        background-color: #E4543A;
+        padding: 10px 40px 10px 10px;
+        border-radius: 10px;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu-utama {
+        padding: 30px;
+        gap: 10px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .col-1 {
+        gap: 10px;
+    }
+}

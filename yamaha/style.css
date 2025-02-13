@@ -1,0 +1,109 @@
+:root {
+    --biru-brand: #3348A1;
+}
+
+body {
+    height: 100vh;
+    background-color: #FEF6E3;
+    font-family: sans-serif;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 120px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    height: fit-content;
+}
+
+
+.col-1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 40px;
+    font-size: 18px;
+}
+
+.menu-utama {
+    margin: auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+    a {
+        color: white;
+    }
+}
+
+h1 {
+    color: var(--biru-brand);
+    font-family: "Michroma", serif;
+    font-weight: 100;
+    }
+
+.image{
+    display: flex;
+    width: 200px;
+}
+.BackHome {
+    display: flex;
+    padding: 10px;
+    background-color: black;
+    width: fit-content;
+    border-radius: 8px;
+    font-style: white;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.background {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+}
+
+.motor-info {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+    a {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        background-color: #E4543A;
+        padding: 10px 10px 10px 10px;
+        border-radius: 10px;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu-utama {
+        padding: 30px;
+        gap: 10px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .col-1 {
+        gap: 10px;
+        width: 100%;
+    }
+}
